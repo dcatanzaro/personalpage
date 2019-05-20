@@ -138,16 +138,42 @@ class StepAmount extends React.Component {
                     technologiesDescription:
                         "HTML5, CSS3, JavaScript, PHP, Mysql, Google App Engine"
                 }
+            ],
+            companies: [
+                {
+                    title: "Frontend Engineer",
+                    subtitle: "MercadoLibre",
+                    images: [
+                        "/static/imgs/portfolio/MercadoLibre/mercadolibre.jpg"
+                    ],
+                    description:
+                        "Trabajé en el area de Customer Experience creando herramientas para los representantes."
+                },
+                {
+                    title: "Frontend Engineer",
+                    subtitle: "Garbarino",
+                    images: ["/static/imgs/portfolio/Garbarino/garbarino.jpg"],
+                    description:
+                        "Trabajé en la creación de la PWA del sitio mejorando así un 27% de conversión via mobile. <a href='https://www.thinkwithgoogle.com/intl/es-419/recursos-y-herramientas/m%C3%B3vil/garbarino-mejora-la-experiencia-movil-a-traves-de-su-progressive-web-app/' target='_blank'>Caso de éxito en Google</a>"
+                }
             ]
         };
     }
 
     render() {
-        const { portfolio } = this.state;
+        const { portfolio, companies } = this.state;
 
         return (
             <React.Fragment>
                 <Profile />
+
+                <h3>Empresas en las que trabajé</h3>
+
+                <div className={style.portfolioContainer}>
+                    {companies.map((item, index) => (
+                        <PortfolioWork portfolio={item} key={index} />
+                    ))}
+                </div>
 
                 <h3>Trabajos realizados</h3>
 

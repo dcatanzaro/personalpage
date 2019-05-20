@@ -23,6 +23,7 @@ class PortfolioWork extends React.Component {
                         showThumbs={false}
                         showStatus={false}
                         infiniteLoop={true}
+                        showIndicators={false}
                         className={style.carousel}
                     >
                         {portfolio.images.map((image, index) => (
@@ -33,8 +34,19 @@ class PortfolioWork extends React.Component {
                     </Carousel>
                 </header>
                 <footer>
-                    <h5>Tecnologias usadas</h5>
-                    <p>{portfolio.technologiesDescription}</p>
+                    {portfolio.description ? (
+                        <h5>Descripción</h5>
+                    ) : (
+                        <h5>Tecnologias usadas</h5>
+                    )}
+
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: portfolio.description
+                                ? portfolio.description
+                                : portfolio.technologiesDescription
+                        }}
+                    />
                 </footer>
             </section>
         );
