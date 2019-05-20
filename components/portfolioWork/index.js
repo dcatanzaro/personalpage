@@ -37,7 +37,7 @@ class PortfolioWork extends React.Component {
                     {portfolio.description ? (
                         <h5>Descripción</h5>
                     ) : (
-                        <h5>Tecnologias usadas</h5>
+                        <h5>Tecnologías usadas</h5>
                     )}
 
                     <p
