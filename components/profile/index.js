@@ -10,6 +10,8 @@ import {
     faGithub
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 class Profile extends React.Component {
     constructor(props) {
         super(props);
@@ -53,6 +55,14 @@ class Profile extends React.Component {
                             <a target="_blank">
                                 <li>
                                     <FontAwesomeIcon icon={faGithub} />
+                                </li>
+                            </a>
+                        </Link>
+
+                        <Link href="mailto:damiancatanzaro@gmail.com">
+                            <a>
+                                <li>
+                                    <FontAwesomeIcon icon={faEnvelope} />
                                 </li>
                             </a>
                         </Link>
