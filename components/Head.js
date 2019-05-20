@@ -22,15 +22,24 @@ export default () => (
 
         <meta name="description" content="Full Stack Web Developer" />
 
-        <meta name="image" content="/static/imgs/profile.jpg" />
+        <meta
+            name="image"
+            content="https://damiancatanzaro.com/static/imgs/profile.jpg"
+        />
 
         <meta itemProp="name" content="Damián Catanzaro" />
         <meta itemProp="description" content="Full Stack Web Developer" />
-        <meta itemProp="image" content="/static/imgs/profile.jpg" />
+        <meta
+            itemProp="image"
+            content="https://damiancatanzaro.com/static/imgs/profile.jpg"
+        />
 
         <meta name="og:title" content="Damián Catanzaro" />
         <meta name="og:description" content="Full Stack Web Developer" />
-        <meta name="og:image" content="/static/imgs/profile.jpg" />
+        <meta
+            name="og:image"
+            content="https://damiancatanzaro.com/static/imgs/profile.jpg"
+        />
         <meta name="og:url" content="https://damiancatanzaro.com.ar/" />
         <meta name="og:site_name" content="Damián Catanzaro" />
         <meta name="og:locale" content="es_ES" />
@@ -49,7 +58,7 @@ export default () => (
         <meta
             prefix="og: http://ogp.me/ns#"
             property="og:image"
-            content="/static/imgs/profile.jpg"
+            content="https://damiancatanzaro.com/static/imgs/profile.jpg"
         />
         <meta
             prefix="og: http://ogp.me/ns#"
