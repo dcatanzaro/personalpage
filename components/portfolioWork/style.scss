@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+
+.portfolioWorkContainer {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+
+    h4 {
+        color: #353535;
+        font-size: 20px;
+        padding: 20px;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+
+    h5 {
+        color: #353535;
+        font-size: 16px;
+        padding: 20px;
+        padding-top: 0;
+        margin: 0;
+        font-family: "Avenir-Light";
+    }
+
+    footer {
+        h5 {
+            padding: 20px;
+            margin: 0;
+            color: #353535;
+            font-size: 16px;
+            padding-bottom: 0;
+            font-family: "Avenir-Roman";
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 20px;
+            color: #353535;
+        }
+
+        p {
+            margin: 0;
+            padding: 20px;
+            color: #353535;
+            box-sizing: border-box;
+            font-family: "Avenir-Light";
+        }
+    }
+
+    .carousel {
+        ul {
+            padding: 0;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 30%;
+    }
+}

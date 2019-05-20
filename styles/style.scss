@@ -1,0 +1,25 @@
+//General Styles
+@font-face {
+    font-family: "Avenir-Light";
+    src: url("/static/fonts/AvenirLTStd-Light.otf");
+}
+
+@font-face {
+    font-family: "Avenir-Roman";
+    src: url("/static/fonts/AvenirLTStd-Roman.otf");
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir-Roman";
+}
+
+body {
+    background-image: url("/static/imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
