@@ -7,12 +7,10 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 const urls = require("./config/urls.json");
 const compression = require("compression");
-const cookieParser = require("cookie-parser");
 
 app.prepare().then(() => {
     const server = express();
 
-    server.use(cookieParser());
     server.use(compression());
 
     Object.keys(urls).map(function(url, index) {
