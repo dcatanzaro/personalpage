@@ -24,7 +24,6 @@ class Profile extends React.Component {
                 <header>
                     <div className={style.profileImage}>
                         <img
-                            loading="lazy"
                             src="/static/imgs/profile-2.jpg"
                             alt="Profile image"
                             width="120"
