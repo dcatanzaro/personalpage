@@ -38,6 +38,7 @@ class Profile extends React.Component {
                     <ul>
                         <li>
                             <a
+                                rel="noreferrer"
                                 target="_blank"
                                 href="https://twitter.com/DamianCatanzaro"
                             >
@@ -47,6 +48,7 @@ class Profile extends React.Component {
 
                         <li>
                             <a
+                                rel="noreferrer"
                                 target="_blank"
                                 href="https://damiancatanzaro.com/blog/?utm_source=personalpage"
                             >
@@ -56,6 +58,7 @@ class Profile extends React.Component {
 
                         <li>
                             <a
+                                rel="noreferrer"
                                 target="_blank"
                                 href="https://www.linkedin.com/in/damiancatanzaro/"
                             >
@@ -65,6 +68,7 @@ class Profile extends React.Component {
 
                         <li>
                             <a
+                                rel="noreferrer"
                                 target="_blank"
                                 href="https://github.com/dcatanzaro"
                             >
@@ -73,7 +77,10 @@ class Profile extends React.Component {
                         </li>
 
                         <li>
-                            <a href="mailto:damiancatanzaro@gmail.com">
+                            <a
+                                rel="noreferrer"
+                                href="mailto:damiancatanzaro@gmail.com"
+                            >
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </a>
                         </li>
