@@ -283,7 +283,7 @@ class StepAmount extends React.Component {
                         }
                     ],
                     description:
-                        "Trabajé en la creación de la PWA del sitio mejorando así un 27% de conversión via mobile. <a href='https://www.thinkwithgoogle.com/intl/es-419/recursos-y-herramientas/m%C3%B3vil/garbarino-mejora-la-experiencia-movil-a-traves-de-su-progressive-web-app/' target='_blank'>Caso de éxito en Google</a>"
+                        "Trabajé en la creación de la PWA del sitio mejorando así un 27% de conversión via mobile. <a href='https://www.thinkwithgoogle.com/intl/es-419/recursos-y-herramientas/m%C3%B3vil/garbarino-mejora-la-experiencia-movil-a-traves-de-su-progressive-web-app/' target='_blank' rel='noreferrer'>Caso de éxito en Google</a>"
                 }
             ],
             actualWorks: [

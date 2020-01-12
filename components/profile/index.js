@@ -42,6 +42,7 @@ class Profile extends React.Component {
                                 target="_blank"
                                 href="https://twitter.com/DamianCatanzaro"
                             >
+                                Twitter
                                 <FontAwesomeIcon icon={faTwitter} />
                             </a>
                         </li>
@@ -52,6 +53,7 @@ class Profile extends React.Component {
                                 target="_blank"
                                 href="https://damiancatanzaro.com/blog/?utm_source=personalpage"
                             >
+                                Blog
                                 <FontAwesomeIcon icon={faBloggerB} />
                             </a>
                         </li>
@@ -62,6 +64,7 @@ class Profile extends React.Component {
                                 target="_blank"
                                 href="https://www.linkedin.com/in/damiancatanzaro/"
                             >
+                                LinkedIn
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
                         </li>
@@ -72,6 +75,7 @@ class Profile extends React.Component {
                                 target="_blank"
                                 href="https://github.com/dcatanzaro"
                             >
+                                GitHub
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                         </li>
@@ -81,6 +85,7 @@ class Profile extends React.Component {
                                 rel="noreferrer"
                                 href="mailto:damiancatanzaro@gmail.com"
                             >
+                                Mail
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </a>
                         </li>
