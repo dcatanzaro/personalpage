@@ -32,7 +32,11 @@ class PortfolioWork extends React.Component {
                     >
                         {portfolio.images.map((image, index) => (
                             <div key={index}>
-                                <img src={image.img} alt={image.alt} />
+                                <img
+                                    src={image.img}
+                                    alt={image.alt}
+                                    loading="lazy"
+                                />
                             </div>
                         ))}
                     </Carousel>
