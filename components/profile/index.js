@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faTwitter,
     faLinkedinIn,
-    faGithub
+    faGithub,
+    faBloggerB
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -23,7 +24,7 @@ class Profile extends React.Component {
                 <header>
                     <div className={style.profileImage}>
                         <img
-                            src="/static/imgs/profile.jpg"
+                            src="/static/imgs/profile-2.jpg"
                             alt="Profile image"
                             width="120"
                         />
@@ -35,37 +36,47 @@ class Profile extends React.Component {
                 </header>
                 <footer>
                     <ul>
-                        <Link href="https://twitter.com/DamianCatanzaro">
-                            <a target="_blank">
-                                <li>
-                                    <FontAwesomeIcon icon={faTwitter} />
-                                </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://twitter.com/DamianCatanzaro"
+                            >
+                                <FontAwesomeIcon icon={faTwitter} />
                             </a>
-                        </Link>
+                        </li>
 
-                        <Link href="https://www.linkedin.com/in/damiancatanzaro/">
-                            <a target="_blank">
-                                <li>
-                                    <FontAwesomeIcon icon={faLinkedinIn} />
-                                </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://damiancatanzaro.com/blog/?utm_source=personalpage"
+                            >
+                                <FontAwesomeIcon icon={faBloggerB} />
                             </a>
-                        </Link>
+                        </li>
 
-                        <Link href="https://github.com/dcatanzaro">
-                            <a target="_blank">
-                                <li>
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://www.linkedin.com/in/damiancatanzaro/"
+                            >
+                                <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
-                        </Link>
+                        </li>
 
-                        <Link href="mailto:damiancatanzaro@gmail.com">
-                            <a>
-                                <li>
-                                    <FontAwesomeIcon icon={faEnvelope} />
-                                </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://github.com/dcatanzaro"
+                            >
+                                <FontAwesomeIcon icon={faGithub} />
                             </a>
-                        </Link>
+                        </li>
+
+                        <li>
+                            <a href="mailto:damiancatanzaro@gmail.com">
+                                <FontAwesomeIcon icon={faEnvelope} />
+                            </a>
+                        </li>
                     </ul>
                 </footer>
             </section>

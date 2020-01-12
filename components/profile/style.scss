@@ -60,11 +60,6 @@
             margin: 0;
             padding: 0 50px;
             padding-bottom: 20px;
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
         }
 
         li {
@@ -72,14 +67,21 @@
             height: 50px;
             border-radius: 100%;
             border: solid 1px #c8cccf;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
             &:hover {
                 border: solid 1px rgb(63, 63, 228);
                 color: rgb(63, 63, 228);
                 cursor: pointer;
+            }
+
+            a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
             }
         }
 

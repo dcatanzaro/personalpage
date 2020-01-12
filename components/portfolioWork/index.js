@@ -25,10 +25,14 @@ class PortfolioWork extends React.Component {
                         infiniteLoop={true}
                         showIndicators={false}
                         className={style.carousel}
+                        labels={{
+                            leftArrow: "Navegación derecha",
+                            rightArrow: "Navegación derecha"
+                        }}
                     >
                         {portfolio.images.map((image, index) => (
                             <div key={index}>
-                                <img src={image} />
+                                <img src={image.img} alt={image.alt} />
                             </div>
                         ))}
                     </Carousel>
