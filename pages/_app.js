@@ -1,40 +1,26 @@
-import App from "next/app";
-import React from "react";
-import withReduxStore from "../lib/with-redux-store";
-import { Provider } from "react-redux";
-import Head from "../components/Head";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/style.scss";
+import "../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { config as configFA } from "@fortawesome/fontawesome-svg-core";
 configFA.autoAddCss = false;
 
-class MyApp extends App {
-    static async getInitialProps({ Component, ctx }) {
-        let pageProps = {};
+export default function MyApp({ Component, pageProps }) {
+    const router = useRouter();
 
-        if (Component.getInitialProps) {
-            pageProps = await Component.getInitialProps(ctx);
+    const handleRouteChange = () => {
+        if (window.plausible) {
+            window.plausible("pageview");
         }
+    };
 
-        return { pageProps };
-    }
+    useEffect(() => {
+        router.events.on("routeChangeComplete", handleRouteChange);
+        router.events.off("routeChangeComplete", handleRouteChange);
+    }, [router.events]);
 
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        const { Component, pageProps, reduxStore } = this.props;
-        return (
-            <React.Fragment>
-                <Head />
-                <Provider store={reduxStore}>
-                    <Component {...pageProps} />
-                </Provider>
-            </React.Fragment>
-        );
-    }
+    return <Component {...pageProps} />;
 }
-
-export default withReduxStore(MyApp);

@@ -4,35 +4,28 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "NODE_ENV=dev nodemon -w server.js server.js",
+        "dev": "next dev",
         "build": "next build",
-        "start": "NODE_ENV=production node server.js",
-        "ci": "NODE_ENV=ci node server.js"
+        "start": "next start"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^1.2.18",
-        "@fortawesome/free-brands-svg-icons": "^5.8.2",
-        "@fortawesome/free-regular-svg-icons": "^5.8.2",
-        "@fortawesome/free-solid-svg-icons": "^5.8.2",
-        "@fortawesome/react-fontawesome": "^0.1.4",
-        "@zeit/next-css": "^1.0.1",
-        "@zeit/next-sass": "^1.0.1",
-        "autoprefixer": "^9.5.1",
+        "@fortawesome/fontawesome-svg-core": "^6.5.1",
+        "@fortawesome/free-brands-svg-icons": "^6.5.1",
+        "@fortawesome/free-regular-svg-icons": "^6.5.1",
+        "@fortawesome/free-solid-svg-icons": "^6.5.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
         "compression": "^1.7.4",
         "express": "^4.17.0",
-        "next": "^9.1.7",
-        "node-sass": "^4.12.0",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "react-redux": "^7.0.3",
+        "next": "^14.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "react-responsive-carousel": "^3.1.49",
-        "redux": "^4.0.1",
         "redux-devtools-extension": "^2.13.8",
-        "redux-thunk": "^2.3.0"
+        "sass": "^1.70.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.2"
+        "nodemon": "^3.0.3"
     }
 }
